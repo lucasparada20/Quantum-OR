@@ -175,7 +175,8 @@ private:
             }
 
             double atomDistance = distance(candidate, positions_[other]);
-            double difference = c6_ / atomDistance - q_[atom][other];
+            double interaction = c6_ / std::pow(atomDistance, 6.0);
+            double difference = interaction - q_[atom][other];
             error += difference * difference;
         }
         return error;

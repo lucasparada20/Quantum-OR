@@ -36,7 +36,7 @@ at $c\in C_k$ as
 
 $$
 \Delta(a_k,c)=\sum_{j\in S}
-\left(\frac{C_6}{\lVert c-p_j\rVert_2}-Q_{a_kj}\right)^2.
+\left(\frac{C_6}{\lVert c-p_j\rVert_2^6}-Q_{a_kj}\right)^2.
 $$
 
 The error of the resulting partial placement is
@@ -51,7 +51,7 @@ value
 
 $$
 \sum_{(i,j)\in E}
-\left(\frac{C_6}{\lVert p_i-p_j\rVert_2}-Q_{ij}\right)^2.
+\left(\frac{C_6}{\lVert p_i-p_j\rVert_2^6}-Q_{ij}\right)^2.
 $$
 
 ## DFS heuristic
